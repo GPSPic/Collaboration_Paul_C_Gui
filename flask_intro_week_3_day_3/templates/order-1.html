@@ -4,20 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gummy Bear orders</title>
+    <title>Gummy Bear Order 1</title>
 </head>
 <body>
     <h1>Gummy Bear store</h1>
         <ul>
-    {% for order in order_list %}
-        <li><a href="/order-1"> {{ order.customer_name }}</a>
+        <li>{{ order1.customer_name }}
             <ul>
-                <li>{{ order.order_date }}</li>
-                <li>{{ order.quantity }}</li>
-                <li>{{ order.gummy_flavour }}</li>
+                <li>{{ order1.order_date }}</li>
+                <li>{{ order1.quantity }}</li>
+                <li>{{ order1.gummy_flavour }}</li>
             </ul>
         </li>
-    {% endfor %}
         </ul>
 </body>
 </html>
